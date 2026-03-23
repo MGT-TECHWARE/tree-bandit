@@ -7,7 +7,7 @@
   <title>Tree Service Van TX | Tree Bandit</title>
   <meta name="description" content="Professional tree service &amp; property solutions in Van, TX. Tree removal, stump grinding, land clearing, fencing, painting, pressure washing &amp; more. Family owned since 2011. Free estimates! Call (903) 530-0890.">
   <link rel="canonical" href="https://mgt-techware.github.io/tree-bandit/">
-  <meta name="theme-color" content="#1B3A2D">
+  <meta name="theme-color" content="#1E1C18">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Tree Bandit — Professional Tree Service in Van, TX">
@@ -118,21 +118,21 @@
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
     :root {
-      --primary: #1B3A2D;
-      --primary-light: #2D5A42;
-      --bg: #F7F5F0;
-      --accent: #C8860A;
-      --accent-hover: #A66F08;
-      --secondary: #5A6B5E;
-      --text: #2C2C2C;
-      --text-light: #6B7B6F;
+      --primary: #1E1C18;
+      --primary-light: #3A3428;
+      --bg: #F5F2EB;
+      --accent: #D4760A;
+      --accent-hover: #B5640A;
+      --secondary: #5C5647;
+      --text: #2A2621;
+      --text-light: #6B6456;
       --white: #FFFFFF;
-      --shadow: 0 4px 24px rgba(27,58,45,0.10);
-      --shadow-lg: 0 12px 48px rgba(27,58,45,0.15);
+      --shadow: 0 4px 24px rgba(30,28,24,0.12);
+      --shadow-lg: 0 12px 48px rgba(30,28,24,0.18);
       --radius: 8px;
     }
 
-    html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+    html { scroll-behavior: smooth; scroll-padding-top: 95px; }
 
     body {
       font-family: 'Source Sans 3', sans-serif;
@@ -155,19 +155,17 @@
     /* NAVBAR */
     .navbar {
       position: fixed; top: 0; left: 0; width: 100%; z-index: 1000;
-      padding: 16px 0; background: transparent;
+      padding: 10px 0; background: transparent;
       transition: all 0.4s cubic-bezier(0.16,1,0.3,1);
     }
     .navbar.scrolled {
-      background: rgba(27,58,45,0.97); padding: 10px 0;
-      box-shadow: 0 2px 20px rgba(0,0,0,0.2); backdrop-filter: blur(10px);
+      background: rgba(30,28,24,0.97); padding: 6px 0;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.3); backdrop-filter: blur(10px);
     }
+    .navbar.scrolled .nav-logo img { max-height: 55px; }
     .navbar .container { display: flex; align-items: center; justify-content: space-between; }
-    .nav-logo {
-      font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 1.6rem;
-      color: var(--white); letter-spacing: 2px; text-transform: uppercase;
-    }
-    .nav-logo span { color: var(--accent); }
+    .nav-logo { display: flex; align-items: center; }
+    .nav-logo img { transition: max-height 0.4s cubic-bezier(0.16,1,0.3,1); }
     .nav-links { display: flex; gap: 28px; list-style: none; align-items: center; }
     .nav-links a {
       color: rgba(255,255,255,0.85); font-weight: 500; font-size: 0.95rem;
@@ -192,7 +190,7 @@
 
     .mobile-menu {
       display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100vh;
-      background: rgba(27,58,45,0.98); z-index: 999;
+      background: rgba(30,28,24,0.98); z-index: 999;
       flex-direction: column; align-items: center; justify-content: center; gap: 32px;
       opacity: 0; pointer-events: none; transition: opacity 0.4s;
     }
@@ -212,7 +210,7 @@
     .hero-bg img { width: 100%; height: 100%; object-fit: cover; will-change: transform; }
     .hero-overlay {
       position: absolute; inset: 0;
-      background: linear-gradient(180deg, rgba(27,58,45,0.65) 0%, rgba(15,25,20,0.8) 100%);
+      background: linear-gradient(180deg, rgba(30,28,24,0.6) 0%, rgba(20,18,14,0.82) 100%);
       z-index: 1;
     }
     .hero-content {
@@ -283,7 +281,7 @@
     .badge:hover { transform: translateY(-2px); }
     .badge-icon {
       width: 44px; height: 44px; border-radius: 50%;
-      background: rgba(27,58,45,0.08); display: flex;
+      background: rgba(30,28,24,0.08); display: flex;
       align-items: center; justify-content: center; flex-shrink: 0;
     }
     .badge-icon svg { width: 22px; height: 22px; stroke: var(--primary); fill: none; stroke-width: 2; }
@@ -347,7 +345,7 @@
     .faq-header { text-align: center; margin-bottom: 48px; }
     .faq-header .section-desc { margin: 0 auto; }
     .faq-list { max-width: 800px; margin: 0 auto; }
-    .faq-item { border-bottom: 1px solid rgba(27,58,45,0.1); overflow: hidden; }
+    .faq-item { border-bottom: 1px solid rgba(30,28,24,0.1); overflow: hidden; }
     .faq-question {
       width: 100%; padding: 24px 0; background: none; border: none;
       display: flex; align-items: center; justify-content: space-between;
@@ -424,7 +422,7 @@
       display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px;
       padding-bottom: 32px; border-bottom: 1px solid rgba(255,255,255,0.1);
     }
-    .footer-brand .nav-logo { font-size: 1.4rem; margin-bottom: 12px; display: block; }
+    .footer-brand .nav-logo { margin-bottom: 12px; display: block; }
     .footer-brand p { font-size: 0.95rem; line-height: 1.7; max-width: 320px; }
     .footer h4 { color: var(--white); font-size: 1rem; letter-spacing: 2px; margin-bottom: 16px; }
     .footer-links { list-style: none; }
@@ -487,7 +485,7 @@
   <!-- NAVBAR -->
   <nav class="navbar" id="navbar">
     <div class="container">
-      <a href="#" class="nav-logo"><img src="https://i.ibb.co/nNrBwx8T/592376531-823942213851681-121144176271656245-n.png" alt="Tree Bandit Logo" style="max-height:50px;width:auto;display:inline-block;vertical-align:middle;margin-right:10px;object-fit:contain;">TREE <span>BANDIT</span></a>
+      <a href="#" class="nav-logo"><img src="https://i.ibb.co/nNrBwx8T/592376531-823942213851681-121144176271656245-n.png" alt="Tree Bandit Logo" style="max-height:75px;width:auto;display:block;object-fit:contain;"></a>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#work">Our Work</a></li>
@@ -735,7 +733,7 @@
     <div class="container">
       <div class="footer-top">
         <div class="footer-brand">
-          <span class="nav-logo">TREE <span>BANDIT</span></span>
+          <img src="https://i.ibb.co/nNrBwx8T/592376531-823942213851681-121144176271656245-n.png" alt="Tree Bandit Logo" style="max-height:60px;width:auto;object-fit:contain;margin-bottom:12px;">
           <p>Family owned and operated since 2011. Proudly serving our fellow East Texans with professional tree care in any situation.</p>
         </div>
         <div>
