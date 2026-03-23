@@ -431,20 +431,6 @@
     .footer-links a:hover { color: var(--accent); }
     .footer-bottom { padding-top: 24px; text-align: center; font-size: 0.85rem; }
 
-    /* STICKY MOBILE CTA */
-    .mobile-cta {
-      display: none; position: fixed; bottom: 0; left: 0; width: 100%;
-      z-index: 9999; background: var(--accent); padding: 12px 20px;
-      text-align: center; box-shadow: 0 -4px 20px rgba(0,0,0,0.2);
-    }
-    .mobile-cta a {
-      display: flex; align-items: center; justify-content: center; gap: 10px;
-      color: var(--white); font-family: 'Oswald', sans-serif;
-      font-size: 1.15rem; font-weight: 700; text-transform: uppercase;
-      letter-spacing: 1px; min-height: 44px;
-    }
-    .mobile-cta svg { width: 22px; height: 22px; stroke: var(--white); fill: none; stroke-width: 2; }
-
     .magnetic-wrap { display: inline-block; }
 
     /* RESPONSIVE */
@@ -475,8 +461,6 @@
       .form-row { grid-template-columns: 1fr; }
       .footer-top { grid-template-columns: 1fr; text-align: center; }
       .footer-brand p { margin: 0 auto; }
-      .mobile-cta { display: block; }
-      body { padding-bottom: 60px; }
       .hero-btns { flex-direction: column; align-items: center; }
       .btn-primary, .btn-ghost { width: 100%; max-width: 320px; justify-content: center; }
       .faq-question { font-size: 1rem; padding: 20px 0; }
@@ -789,14 +773,6 @@
       <div class="footer-bottom">&copy; 2026 Tree Bandit. All rights reserved.</div>
     </div>
   </footer>
-
-  <!-- STICKY MOBILE CTA -->
-  <div class="mobile-cta">
-    <a href="tel:9035300890">
-      <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-      Call Tree Bandit Now
-    </a>
-  </div>
 
   <script>
     gsap.registerPlugin(ScrollTrigger);
