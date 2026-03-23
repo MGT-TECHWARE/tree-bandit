@@ -458,10 +458,16 @@
       .nav-links { display: none; }
       .hamburger { display: flex; }
       .mobile-menu { display: flex; }
+      .nav-logo img { max-height: 55px !important; }
+      .navbar.scrolled .nav-logo img { max-height: 45px; }
       .hero h1 { font-size: clamp(2.2rem, 8vw, 3.5rem); }
+      .hero-sub { font-size: clamp(0.9rem, 3.5vw, 1.1rem); }
       .about-grid { grid-template-columns: 1fr; gap: 40px; }
       .about-img-wrap { order: -1; }
-      .trust-badges { grid-template-columns: 1fr; }
+      .about-img-accent { width: 100px; height: 100px; bottom: -10px; right: -10px; }
+      .about-img-accent .big { font-size: 2rem; }
+      .about-img-accent .small { font-size: 0.7rem; }
+      .trust-badges { grid-template-columns: 1fr 1fr; }
       .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 24px; }
       .work-grid { grid-template-columns: 1fr; max-width: 500px; margin: 0 auto; }
       .contact-grid { grid-template-columns: 1fr; gap: 40px; }
@@ -473,10 +479,32 @@
       body { padding-bottom: 60px; }
       .hero-btns { flex-direction: column; align-items: center; }
       .btn-primary, .btn-ghost { width: 100%; max-width: 320px; justify-content: center; }
+      .faq-question { font-size: 1rem; padding: 20px 0; }
+      .section-title { font-size: clamp(1.6rem, 5vw, 2.4rem); }
     }
     @media (max-width: 480px) {
+      .nav-logo img { max-height: 45px !important; }
+      .navbar { padding: 8px 0; }
       .stats-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
       .stat { padding: 12px; }
+      .stat-number { font-size: clamp(2rem, 8vw, 2.8rem); }
+      .hero-badge { font-size: 0.75rem; padding: 6px 14px; letter-spacing: 2px; }
+      .work-card-body { padding: 18px; }
+      .work-card-body h3 { font-size: 1.05rem; }
+      .work-card-body p { font-size: 0.9rem; }
+      .contact-form { padding: 20px; }
+      .contact-form h3 { font-size: 1.15rem; }
+      .trust-badges { grid-template-columns: 1fr; }
+      .faq-answer-inner { font-size: 0.95rem; }
+    }
+    @media (max-width: 360px) {
+      .container { width: 94%; }
+      .hero h1 { font-size: clamp(1.8rem, 9vw, 2.8rem); }
+      .hero-sub { font-size: 0.88rem; }
+      .btn-primary, .btn-ghost { padding: 14px 24px; font-size: 1rem; }
+      .mobile-menu a { font-size: 1.5rem; }
+      .stat-number { font-size: 1.8rem; }
+      .stat-label { font-size: 0.8rem; }
     }
   </style>
 </head>
