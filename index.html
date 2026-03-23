@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Expert tree cutting and removal service in Van, TX. Family-owned since 2011, serving East Texas with professional, licensed, fully insured tree removal, trimming, stump grinding, and 24/7 emergency service.">
+  <meta name="theme-color" content="#1A2332">
+
+  <!-- SEO & Open Graph -->
+  <meta property="og:type" content="business.business">
+  <meta property="og:title" content="Tree Bandit - Expert Tree Cutting Service Van TX">
+  <meta property="og:description" content="Licensed, insured tree removal and trimming service. 15+ years experience. Free estimates. 24/7 emergency service.">
+  <meta property="og:url" content="https://mgt-techware.github.io/tree-bandit/">
+  <meta property="og:image" content="https://mgt-techware.github.io/tree-bandit/logo.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tree Bandit - Expert Tree Cutting Service Van TX">
+  <meta name="twitter:description" content="Licensed, insured tree removal and trimming service. 15+ years experience. Free estimates. 24/7 emergency service.">
+  <meta name="twitter:image" content="https://mgt-techware.github.io/tree-bandit/logo.jpg">
+  <link rel="canonical" href="https://mgt-techware.github.io/tree-bandit/">
+
+  <title>Tree Cutting Service Van TX | Tree Bandit - Expert Tree Removal</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Preload Hero Image -->
+  <link rel="preload" as="image" href="STOCK-IMAGES/1.jpg">
+
+  <style>
+    /* ===== RESET & BASE STYLES ===== */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+    body { font-family: 'Source Sans 3', sans-serif; color: #1A1A1A; background: #F5F3EF; line-height: 1.6; }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar { width: 10px; }
+    ::-webkit-scrollbar-track { background: #F5F3EF; }
+    ::-webkit-scrollbar-thumb { background: #E8701A; border-radius: 5px; }
+    ::-webkit-scrollbar-thumb:hover { background: #D4601A; }
+
+    /* Selection */
+    ::selection { background: #E8701A; color: white; }
+
+    /* ===== TYPOGRAPHY ===== */
+    h1, h2, h3, h4, h5, h6 { font-family: 'Oswald', sans-serif; font-weight: 700; }
+    h2 { font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 2rem; text-transform: uppercase; letter-spacing: -1px; }
+    h3 { font-size: 1.5rem; margin-bottom: 1rem; }
+    p { margin-bottom: 1rem; }
+
+    /* ===== UTILITY CLASSES ===== */
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+    .section { padding: 5rem 1.5rem; }
+    .section.dark { background: linear-gradient(135deg, #1A2332 0%, #2D3E52 100%); color: #F5F3EF; }
+    .section h2 { color: #E8701A; }
+    .section.dark h2 { color: #C9A227; }
+    .btn { display: inline-block; padding: 1rem 2rem; border-radius: 8px; font-size: 1rem; font-weight: 600; cursor: pointer; transition: all 0.3s ease; text-decoration: none; border: 2px solid transparent; will-change: transform; }
+    .btn-primary { background: #E8701A; color: white; }
+    .btn-primary:hover { background: #D4601A; transform: translateY(-2px); box-shadow: 0 10px 25px rgba(232, 112, 26, 0.3); }
+    .btn-ghost { background: transparent; color: white; border: 2px solid white; }
+    .btn-ghost:hover { background: white; color: #1A2332; }
+    .btn-block { width: 100%; display: block; text-align: center; }
+
+    /* ===== NAVIGATION ===== */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(26, 35, 50, 0.95);
+      backdrop-filter: blur(10px);
+      padding: 1rem 1.5rem;
+      transition: all 0.3s ease;
+    }
+    nav.scrolled {
+      padding: 0.5rem 1.5rem;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    .nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+    .nav-logo { font-family: 'Oswald', sans-serif; font-size: 1.5rem; font-weight: 700; color: #E8701A; text-decoration: none; }
+    .nav-links { display: none; gap: 2rem; list-style: none; }
+    .nav-links.active { display: flex; flex-direction: column; gap: 1rem; position: absolute; top: 60px; left: 0; right: 0; background: rgba(26, 35, 50, 0.98); padding: 2rem 1.5rem; }
+    .nav-links a { color: white; text-decoration: none; font-weight: 500; transition: color 0.3s ease; }
+    .nav-links a:hover { color: #E8701A; }
+    .hamburger { display: none; flex-direction: column; gap: 6px; background: none; border: none; cursor: pointer; }
+    .hamburger span { width: 25px; height: 2px; background: #E8701A; transition: all 0.3s ease; }
+    .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(10px, 10px); }
+    .hamburger.active span:nth-child(2) { opacity: 0; }
+    .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(7px, -7px); }
+
+    @media (max-width: 767px) {
+      .hamburger { display: flex; }
+      .nav-links { position: fixed; left: 0; right: 0; top: 60px; width: 100vw; max-height: none; margin-left: -1.5rem; margin-right: -1.5rem; }
+    }
+    @media (min-width: 768px) {
+      .nav-links { display: flex; gap: 2rem; position: static; background: none; padding: 0; flex-direction: row; }
+      .hamburger { display: none; }
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      height: 100vh;
+      min-height: 600px;
+      background: linear-gradient(135deg, rgba(26, 35, 50, 0.55) 0%, rgba(26, 35, 50, 0.55) 100%), url('STOCK-IMAGES/1.jpg') center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      position: relative;
+      margin-top: 60px;
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    }
+    .hero-content { max-width: 800px; margin-bottom: 2rem; }
+    .hero h1 { font-size: clamp(2rem, 7vw, 4.5rem); font-weight: 700; line-height: 1.1; margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: -1px; }
+    .hero .word { display: inline-block; margin-right: 0.2em; }
+    .hero p { font-size: clamp(1rem, 2vw, 1.25rem); margin-bottom: 2rem; opacity: 0.95; }
+    .hero-buttons { display: flex; flex-direction: column; gap: 1rem; justify-content: center; align-items: center; }
+    @media (min-width: 768px) {
+      .hero-buttons { flex-direction: row; }
+    }
+    .magnetic-btn { position: relative; }
+
+    /* ===== DIVIDER SVG ===== */
+    .divider-svg { width: 100%; height: auto; display: block; margin: -1px 0 0 0; }
+
+    /* ===== ABOUT SECTION ===== */
+    .about { background: #F5F3EF; }
+    .about-content { max-width: 800px; margin: 0 auto 3rem; text-align: center; line-height: 1.8; font-size: 1.1rem; }
+    .trust-badges { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 2rem; margin-top: 3rem; }
+    .badge { display: flex; flex-direction: column; align-items: center; gap: 0.75rem; padding: 1.5rem; background: white; border-radius: 12px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); animation-delay: var(--delay, 0s); will-change: opacity, transform; }
+    .badge-icon { width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: #E8701A; border-radius: 50%; color: white; font-weight: 700; }
+    .badge-text { font-weight: 600; text-align: center; }
+
+    /* ===== REVIEWS ===== */
+    .reviews { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 2rem; margin-top: 3rem; }
+    .review { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); border-left: 4px solid #E8701A; }
+    .review-stars { color: #C9A227; font-size: 1.2rem; margin-bottom: 0.5rem; }
+    .review-text { font-style: italic; margin-bottom: 1rem; color: #555; }
+    .review-author { font-weight: 600; color: #1A2332; }
+
+    /* ===== STATS SECTION ===== */
+    .stats { background: linear-gradient(135deg, #1A2332 0%, #2D3E52 100%); color: white; }
+    .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 2rem; }
+    .stat { text-align: center; padding: 2rem; }
+    .stat-number { font-family: 'Oswald', sans-serif; font-size: clamp(2.5rem, 8vw, 4rem); font-weight: 700; color: #E8701A; margin-bottom: 0.5rem; will-change: content; }
+    .stat-label { font-size: 1.1rem; opacity: 0.9; }
+
+    /* ===== OUR WORK SECTION ===== */
+    .our-work { background: #F5F3EF; }
+    .work-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 2rem; }
+    .work-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+      transform-style: preserve-3d;
+      will-change: transform;
+    }
+    .work-card:hover {
+      transform: perspective(1000px) rotateX(5deg) rotateY(-5deg) scale(1.02);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    }
+    .work-card-image {
+      width: 100%;
+      aspect-ratio: 4/3;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+    .work-card:hover .work-card-image { transform: scale(1.08); }
+    .work-card-content { padding: 2rem; }
+    .work-card h3 { color: #E8701A; margin-bottom: 1rem; }
+    .work-card p { color: #555; }
+
+    /* ===== FAQ SECTION ===== */
+    .faq { background: white; }
+    .faq-container { max-width: 800px; margin: 0 auto; }
+    .faq-item { margin-bottom: 1.5rem; border: 1px solid #E0E0E0; border-radius: 8px; overflow: hidden; }
+    .faq-item summary {
+      padding: 1.5rem;
+      cursor: pointer;
+      font-weight: 600;
+      background: #F5F3EF;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+      transition: all 0.3s ease;
+    }
+    .faq-item summary:hover { background: #E8E6E2; }
+    .faq-item[open] summary { background: #1A2332; color: white; }
+    .faq-item summary::after {
+      content: '▼';
+      font-size: 0.8rem;
+      transition: transform 0.3s ease;
+    }
+    .faq-item[open] summary::after { transform: rotate(180deg); }
+    .faq-item-content { padding: 1.5rem; background: white; }
+    .faq-item-content p { color: #555; margin-bottom: 0; }
+
+    /* ===== CONTACT SECTION ===== */
+    .contact { background: linear-gradient(135deg, #1A2332 0%, #2D3E52 100%); color: white; }
+    .contact-container { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; }
+    @media (max-width: 767px) {
+      .contact-container { grid-template-columns: 1fr; }
+    }
+    .contact-info { display: flex; flex-direction: column; gap: 2rem; }
+    .contact-block { animation-delay: var(--delay, 0s); will-change: opacity, transform; }
+    .contact-block h3 { margin-bottom: 1rem; }
+    .contact-phone-btn {
+      background: #E8701A;
+      color: white;
+      padding: 1.5rem 2rem;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      display: block;
+      text-align: center;
+      transition: all 0.3s ease;
+      margin-bottom: 1rem;
+      will-change: transform;
+    }
+    .contact-phone-btn:hover { background: #D4601A; transform: translateY(-2px); }
+    .contact-email { color: #C9A227; text-decoration: none; font-weight: 500; }
+    .contact-email:hover { text-decoration: underline; }
+    .contact-address { line-height: 1.8; }
+    .contact-address a { color: #C9A227; text-decoration: none; }
+    .contact-address a:hover { text-decoration: underline; }
+    .contact-areas { margin-top: 1rem; font-size: 0.9rem; opacity: 0.9; }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      animation-delay: 0.2s;
+      will-change: opacity, transform;
+    }
+    .form-group { display: flex; flex-direction: column; }
+    .form-group label { margin-bottom: 0.5rem; font-weight: 600; }
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      padding: 0.75rem;
+      border: 1px solid #CBD5E1;
+      border-radius: 6px;
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 1rem;
+      background: white;
+      color: #1A1A1A;
+      transition: all 0.3s ease;
+    }
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: #E8701A;
+      box-shadow: 0 0 0 3px rgba(232, 112, 26, 0.1);
+    }
+    .form-group textarea { min-height: 120px; resize: vertical; }
+    .form-submit {
+      padding: 1rem;
+      background: #E8701A;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      will-change: transform;
+    }
+    .form-submit:hover { background: #D4601A; transform: translateY(-2px); }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #1A2332;
+      color: #C9A227;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+    footer a { color: #C9A227; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    /* ===== MOBILE CTA ===== */
+    .mobile-cta {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 9999;
+      background: #E8701A;
+      padding: 1rem;
+      text-align: center;
+    }
+    .mobile-cta a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0.75rem;
+    }
+    @media (max-width: 767px) {
+      .mobile-cta { display: block; }
+      body { padding-bottom: 70px; }
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1023px) {
+      .container { padding: 0 1rem; }
+      .section { padding: 3rem 1rem; }
+      h2 { font-size: 2rem; }
+    }
+    @media (max-width: 767px) {
+      h2 { font-size: 1.5rem; }
+      h3 { font-size: 1.25rem; }
+      .hero { clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); }
+      .contact-form { gap: 1rem; }
+    }
+
+    /* ===== ANIMATIONS ===== */
+    .animate-in { will-change: opacity, transform; }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <a href="#" class="nav-logo">TREE BANDIT</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#why-us">Why Us</a></li>
+        <li><a href="#work">Services</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>
+        <span class="word">Expert</span>
+        <span class="word">Tree</span>
+        <span class="word">Service</span>
+        <span class="word">For</span>
+        <span class="word">East</span>
+        <span class="word">Texas</span>
+      </h1>
+      <p>Family owned since 2011 — Licensed, Insured & Ready 24/7</p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary magnetic-btn">Get My Free Estimate</a>
+        <a href="tel:(903)530-0890" class="btn btn-ghost">Call (903) 530-0890</a>
+      </div>
+    </div>
+
+    <svg class="divider-svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0,60 Q300,0 600,60 T1200,60 L1200,120 L0,120 Z" fill="#F5F3EF"/>
+    </svg>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="container">
+      <h2>About Tree Bandit</h2>
+
+      <div class="about-content animate-in">
+        <p>Tree Bandit has been the trusted name in tree care across East Texas since 2011. As a family-owned and operated company, we bring over a decade of hands-on expertise to every job — from routine trimming to emergency storm cleanup. Fully insured and always ready, we treat every property like our own.</p>
+      </div>
+
+      <div class="trust-badges">
+        <div class="badge animate-in" style="--delay: 0s;">
+          <div class="badge-icon">✓</div>
+          <div class="badge-text">Licensed</div>
+        </div>
+        <div class="badge animate-in" style="--delay: 0.1s;">
+          <div class="badge-icon">✓</div>
+          <div class="badge-text">Fully Insured</div>
+        </div>
+        <div class="badge animate-in" style="--delay: 0.2s;">
+          <div class="badge-icon">✓</div>
+          <div class="badge-text">Free Estimates</div>
+        </div>
+        <div class="badge animate-in" style="--delay: 0.3s;">
+          <div class="badge-icon">✓</div>
+          <div class="badge-text">24/7 Emergency</div>
+        </div>
+      </div>
+
+      <div class="reviews">
+        <div class="review animate-in" style="--delay: 0.4s;">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Quick response time for bidding the job, professional & efficient."</p>
+          <p class="review-author">— Satisfied Customer</p>
+        </div>
+        <div class="review animate-in" style="--delay: 0.5s;">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Wonderful job! Super friendly and exceptional service."</p>
+          <p class="review-author">— Happy Client</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section class="section dark" id="why-us">
+    <div class="container">
+      <h2>Why Choose Tree Bandit</h2>
+      <div class="stats-grid">
+        <div class="stat animate-in" style="--delay: 0s;">
+          <div class="stat-number" data-value="15">0</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat animate-in" style="--delay: 0.1s;">
+          <div class="stat-number" data-value="500">0</div>
+          <div class="stat-label">Trees Serviced</div>
+        </div>
+        <div class="stat animate-in" style="--delay: 0.2s;">
+          <div class="stat-number" data-value="545">0</div>
+          <div class="stat-label">Community Followers</div>
+        </div>
+        <div class="stat animate-in" style="--delay: 0.3s;">
+          <div class="stat-number" data-value="24">0</div>
+          <div class="stat-label">Hour Availability</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Work / Services Section -->
+  <section class="section our-work" id="work">
+    <div class="container">
+      <h2>Our Services & Projects</h2>
+      <div class="work-grid">
+        <div class="work-card animate-in">
+          <img src="STOCK-IMAGES/1.jpg" alt="Professional tree removal service" class="work-card-image parallax-img" width="400" height="300" loading="lazy">
+          <div class="work-card-content">
+            <h3>Tree Removal</h3>
+            <p>Complete tree removal for hazardous, dead, or unwanted trees. We handle any size safely and efficiently.</p>
+          </div>
+        </div>
+
+        <div class="work-card animate-in">
+          <img src="STOCK-IMAGES/2.jpg" alt="Professional tree trimming and pruning" class="work-card-image parallax-img" width="400" height="300" loading="lazy">
+          <div class="work-card-content">
+            <h3>Tree Trimming & Pruning</h3>
+            <p>Professional pruning to improve tree health, shape, and safety. Keeps your trees strong and beautiful year-round.</p>
+          </div>
+        </div>
+
+        <div class="work-card animate-in">
+          <img src="STOCK-IMAGES/3.jpg" alt="Stump grinding and removal service" class="work-card-image parallax-img" width="400" height="300" loading="lazy">
+          <div class="work-card-content">
+            <h3>Stump Grinding</h3>
+            <p>Full stump removal that restores your yard to a clean, usable state. No stump too big or small.</p>
+          </div>
+        </div>
+
+        <div class="work-card animate-in">
+          <img src="STOCK-IMAGES/4.jpg" alt="Storm damage cleanup and tree removal" class="work-card-image parallax-img" width="400" height="300" loading="lazy">
+          <div class="work-card-content">
+            <h3>Storm Damage Cleanup</h3>
+            <p>Fast emergency response for fallen trees and storm debris. We're available 24/7 when disaster strikes.</p>
+          </div>
+        </div>
+
+        <div class="work-card animate-in">
+          <img src="STOCK-IMAGES/5.jpg" alt="Land clearing for development or agriculture" class="work-card-image parallax-img" width="400" height="300" loading="lazy">
+          <div class="work-card-content">
+            <h3>Land Clearing</h3>
+            <p>Efficient clearing for construction, agriculture, or property development. Brush, trees, and debris handled.</p>
+          </div>
+        </div>
+
+        <div class="work-card animate-in">
+          <img src="STOCK-IMAGES/6.jpg" alt="24/7 emergency tree service available" class="work-card-image parallax-img" width="400" height="300" loading="lazy">
+          <div class="work-card-content">
+            <h3>Emergency Tree Service</h3>
+            <p>Around-the-clock emergency service for dangerous or fallen trees. Call anytime — we'll be there.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section faq" id="faq">
+    <div class="container">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-container">
+        <details class="faq-item animate-in">
+          <summary>How much does tree removal cost?</summary>
+          <div class="faq-item-content">
+            <p>Cost depends on the size, location, and condition of the tree. We provide free on-site estimates so you know exactly what to expect — no hidden fees. Contact us today for your personalized quote.</p>
+          </div>
+        </details>
+
+        <details class="faq-item animate-in">
+          <summary>Do you offer emergency tree service?</summary>
+          <div class="faq-item-content">
+            <p>Yes! Tree Bandit is available 24/7 for emergency situations like storm damage or fallen trees threatening your property. We understand that tree emergencies can't wait — call us anytime and we'll respond quickly.</p>
+          </div>
+        </details>
+
+        <details class="faq-item animate-in">
+          <summary>Are you licensed and insured?</summary>
+          <div class="faq-item-content">
+            <p>Absolutely. We are fully insured to protect both our crew and your property on every job. Your peace of mind is our priority, and we maintain all necessary licenses and certifications to operate in East Texas.</p>
+          </div>
+        </details>
+
+        <details class="faq-item animate-in">
+          <summary>How long does tree removal take?</summary>
+          <div class="faq-item-content">
+            <p>Most residential trees can be removed in a single day. Larger or more complex jobs may take 2-3 days. We'll give you a detailed timeline during your free estimate so you know what to expect.</p>
+          </div>
+        </details>
+
+        <details class="faq-item animate-in">
+          <summary>What areas do you serve?</summary>
+          <div class="faq-item-content">
+            <p>We serve Van Zandt County, Rains County, Wood County, Hunt County, and surrounding areas across East Texas. If you're unsure whether we cover your location, please reach out and we'll be happy to let you know.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <h2>Get Your Free Estimate Today</h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="contact-block animate-in" style="--delay: 0s;">
+            <a href="tel:(903)530-0890" class="contact-phone-btn">📞 Call (903) 530-0890</a>
+            <p>Available 24/7 for all emergencies. Get an instant quote over the phone.</p>
+          </div>
+
+          <div class="contact-block animate-in" style="--delay: 0.1s;">
+            <h3>Email</h3>
+            <a href="mailto:treebandittx@gmail.com" class="contact-email">treebandittx@gmail.com</a>
+            <p style="font-size: 0.9rem; margin-top: 0.5rem;">Send us details about your tree service needs.</p>
+          </div>
+
+          <div class="contact-block animate-in" style="--delay: 0.2s;">
+            <h3>Service Area</h3>
+            <div class="contact-address">
+              <p><strong>Van, TX 75790</strong></p>
+              <a href="https://www.google.com/maps/place/Van,+TX+75790" target="_blank" rel="noopener noreferrer">📍 View on Google Maps</a>
+            </div>
+            <div class="contact-areas">
+              <p><strong>We serve:</strong> Van Zandt County, Rains County, Wood County, Hunt County & surrounding East Texas areas.</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" action="mailto:treebandittx@gmail.com" method="POST" enctype="text/plain">
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="service">Service Needed *</label>
+            <select id="service" name="service" required>
+              <option value="">— Select a service —</option>
+              <option value="Tree Removal">Tree Removal</option>
+              <option value="Trimming & Pruning">Trimming & Pruning</option>
+              <option value="Stump Grinding">Stump Grinding</option>
+              <option value="Storm Damage">Storm Damage Cleanup</option>
+              <option value="Land Clearing">Land Clearing</option>
+              <option value="Emergency Service">Emergency Service</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Tell Us About Your Trees</label>
+            <textarea id="message" name="message" placeholder="Describe the trees, location, and any concerns..."></textarea>
+          </div>
+
+          <button type="submit" class="form-submit btn-block">Send My Estimate Request</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mobile CTA -->
+  <div class="mobile-cta">
+    <a href="tel:(903)530-0890">📞 Call Now - Available 24/7</a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p><strong>TREE BANDIT</strong> | <a href="tel:(903)530-0890">(903) 530-0890</a> | <a href="mailto:treebandittx@gmail.com">treebandittx@gmail.com</a></p>
+      <p>Van, TX 75790 • Serving East Texas Since 2011</p>
+      <p><em>"Let Us Take Care Of It"</em></p>
+      <p style="margin-top: 1rem; opacity: 0.7;">&copy; 2026 Tree Bandit. All rights reserved. Licensed & Insured.</p>
+    </div>
+  </footer>
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Tree Bandit",
+    "description": "Expert tree removal, trimming, and stump grinding service in Van, TX. Licensed, insured, 24/7 emergency service.",
+    "url": "https://mgt-techware.github.io/tree-bandit/",
+    "telephone": "(903) 530-0890",
+    "email": "treebandittx@gmail.com",
+    "areaServed": [
+      {"@type": "AdministrativeArea", "name": "Van Zandt County, TX"},
+      {"@type": "AdministrativeArea", "name": "Rains County, TX"},
+      {"@type": "AdministrativeArea", "name": "Wood County, TX"},
+      {"@type": "AdministrativeArea", "name": "Hunt County, TX"}
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Van",
+      "addressRegion": "TX",
+      "postalCode": "75790",
+      "addressCountry": "US"
+    },
+    "image": "https://mgt-techware.github.io/tree-bandit/logo.jpg",
+    "priceRange": "$$",
+    "hoursOfOperation": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+      }
+    ],
+    "sameAs": ["https://www.facebook.com/TheTreeBandit"],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "ratingCount": "2"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much does tree removal cost?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Cost depends on the size, location, and condition of the tree. We provide free on-site estimates so you know exactly what to expect — no hidden fees."}
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer emergency tree service?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Yes! Tree Bandit is available 24/7 for emergency situations like storm damage or fallen trees threatening your property."}
+      },
+      {
+        "@type": "Question",
+        "name": "Are you licensed and insured?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Absolutely. We are fully insured to protect both our crew and your property on every job."}
+      },
+      {
+        "@type": "Question",
+        "name": "How long does tree removal take?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Most residential trees can be removed in a single day. Larger or more complex jobs may take 2-3 days. We'll give you a timeline during your free estimate."}
+      },
+      {
+        "@type": "Question",
+        "name": "What areas do you serve?",
+        "acceptedAnswer": {"@type": "Answer", "text": "We serve Van Zandt County, Rains County, Wood County, Hunt County, and surrounding areas across East Texas."}
+      }
+    ]
+  }
+  </script>
+
+  <!-- GSAP & Lenis Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+
+  <script>
+    // Register ScrollTrigger plugin
+    gsap.registerPlugin(ScrollTrigger);
+
+    // ===== LENIS SMOOTH SCROLL =====
+    const lenis = new Lenis({
+      lerp: 0.1,
+      smoothWheel: true,
+      wheelMultiplier: 0.8
+    });
+
+    lenis.on('scroll', ScrollTrigger.update);
+    gsap.ticker.add((time) => {
+      lenis.raf(time * 1000);
+    });
+    gsap.ticker.lagSmoothing(0);
+
+    // ===== HAMBURGER MENU TOGGLE =====
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+
+    // Close menu when link clicked
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+      });
+    });
+
+    // ===== HERO WORD STAGGER REVEAL =====
+    gsap.from('.hero .word', {
+      y: 120,
+      opacity: 0,
+      rotateX: -90,
+      stagger: 0.08,
+      duration: 1,
+      ease: 'power3.out',
+      delay: 0.3
+    });
+
+    // ===== NAVBAR COMPACT ON SCROLL =====
+    ScrollTrigger.create({
+      start: 'top -80',
+      onUpdate: self => {
+        document.querySelector('nav').classList.toggle('scrolled', self.progress > 0);
+      }
+    });
+
+    // ===== SCROLL-TRIGGERED SECTION REVEALS =====
+    gsap.utils.toArray('.section').forEach((section) => {
+      gsap.from(section.querySelectorAll('.animate-in'), {
+        y: 60,
+        opacity: 0,
+        stagger: 0.1,
+        duration: 0.8,
+        ease: 'power3.out',
+        scrollTrigger: {
+          trigger: section,
+          start: 'top 80%',
+          markers: false
+        }
+      });
+    });
+
+    // ===== WORK CARD STAGGER GROW-IN =====
+    gsap.from('.work-card', {
+      scale: 0.85,
+      opacity: 0,
+      stagger: 0.12,
+      duration: 0.7,
+      ease: 'back.out(1.4)',
+      scrollTrigger: {
+        trigger: '.our-work',
+        start: 'top 75%',
+        markers: false
+      }
+    });
+
+    // ===== PARALLAX IMAGES =====
+    gsap.utils.toArray('.parallax-img').forEach(img => {
+      gsap.to(img, {
+        yPercent: -20,
+        ease: 'none',
+        scrollTrigger: {
+          trigger: img,
+          start: 'top bottom',
+          end: 'bottom top',
+          scrub: 1.5,
+          markers: false
+        }
+      });
+    });
+
+    // ===== MAGNETIC CTA BUTTONS =====
+    document.querySelectorAll('.magnetic-btn').forEach(btn => {
+      btn.addEventListener('mousemove', e => {
+        const rect = btn.getBoundingClientRect();
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+        gsap.to(btn, {
+          x: x * 0.3,
+          y: y * 0.3,
+          duration: 0.4,
+          ease: 'power2.out',
+          overwrite: 'auto'
+        });
+      });
+
+      btn.addEventListener('mouseleave', () => {
+        gsap.to(btn, {
+          x: 0,
+          y: 0,
+          duration: 0.4,
+          ease: 'elastic.out(1, 0.5)',
+          overwrite: 'auto'
+        });
+      });
+    });
+
+    // ===== STAT COUNTER ANIMATION =====
+    gsap.utils.toArray('.stat-number').forEach(el => {
+      const target = parseInt(el.dataset.value);
+      gsap.from(el, {
+        textContent: 0,
+        duration: 2,
+        ease: 'power1.out',
+        snap: { textContent: 1 },
+        scrollTrigger: {
+          trigger: el,
+          start: 'top 85%',
+          markers: false
+        },
+        onUpdate: function() {
+          el.textContent = Math.ceil(parseFloat(el.textContent)) + '+';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
